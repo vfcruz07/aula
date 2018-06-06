@@ -1,4 +1,4 @@
-package com.victorcruz.domain;
+package com.victorcruz.aula.domain;
 
 import java.io.Serializable;
 

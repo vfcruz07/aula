@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"com.victorcruz.aula.resources"})
-@EntityScan( basePackages = {"com.victorcruz.domain"} )
+@ComponentScan({"com.victorcruz.aula.services", "com.victorcruz.aula.resources"})
+@EntityScan( basePackages = {"com.victorcruz.aula.domain"} )
 public class AulaApplication {
 
 	public static void main(String[] args) {
