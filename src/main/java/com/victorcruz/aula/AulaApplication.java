@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"com.victorcruz.resources"})
+@ComponentScan({"com.victorcruz.aula.resources"})
 public class AulaApplication {
 
 	public static void main(String[] args) {
