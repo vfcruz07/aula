@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 public class Categoria implements Serializable {
 
@@ -35,6 +37,7 @@ public class Categoria implements Serializable {
 	 * 1 categoria pertence a 0, 1 ou muitos produtos
 	 */
 	
+	@JsonManagedReference
 	@ManyToMany(mappedBy="categorias")
 	private List<Produto> produtos = new ArrayList<>();
 	
